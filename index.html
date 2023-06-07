@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+            crossorigin="anonymous"
+    />
+
+    <!-- own CSS -->
+    <link rel="stylesheet" href="style.css"/>
+    <!--google icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <title>503 Service Unavailable</title>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="head-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/WCA.svg" alt="" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown" id="info-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons md-18">info</span>
+                            資訊
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/about">
+                                <span class="material-icons md-18">
+                                    description
+                                </span>
+                                    關於WCA
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/documents">
+                                <span class="material-icons md-18">
+                                    file_copy
+                                </span>
+                                    WCA文件
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.worldcubeassociation.org/delegates">
+                                <span class="material-icons md-18">
+                                    lan
+                                </span>
+                                WCA代表
+                            </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/teams-committees">
+                                <span class="material-icons md-18">
+                                    recent_actors
+                                </span>
+                                    團隊、委員會和理事會
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/organizations">
+                                <span class="material-icons md-18">
+                                    flag
+                                </span>
+                                    區域組織
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/faq">
+                                    <span class="material-icons md-18">
+                                        help
+                                    </span>
+                                    常見問題
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/education">
+                                    <span class="material-icons md-18">
+                                        school
+                                    </span>
+                                    學習資源
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/contact/website">
+                                    <span class="material-icons md-18">
+                                        mail
+                                    </span>
+                                    聯絡資訊
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/speedcubing-history">
+                                    <span class="material-icons md-18">
+                                        history
+                                    </span>
+                                    方塊速解歷史
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/media-instagram">
+                                    <span class="material-icons md-18">
+                                        photo_camera
+                                    </span>
+                                    上傳媒體
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/privacy">
+                                    <span class="material-icons md-18">
+                                        security
+                                    </span>
+                                    Privacy
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/disclaimer">
+                                    <span class="material-icons md-18">
+                                        error
+                                    </span>
+                                    Disclaimer
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/score-tools">
+                                    <span class="material-icons md-18">
+                                        build
+                                    </span>
+                                    工具
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/logo">
+                                    <span>
+                                        <img src="images/WCA.svg" alt="" width=18 height="18">
+                                    </span>
+                                    WCA標誌
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown" id="contest-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons md-18">
+                                view_in_ar
+                            </span>
+                            比賽
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/competitions">
+                                    <span class="material-icons md-18">
+                                        language
+                                    </span>
+                                    所有比賽
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/competitions/mine">
+                                    <span class="material-icons md-18">
+                                        list
+                                    </span>
+                                    我的比賽
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown" id="grade-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons md-18">
+                                format_list_numbered
+                            </span>
+                            成績
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="https://live.worldcubeassociation.org/">
+                                    <span class="material-icons md-18">
+                                        format_list_numbered_rtl
+                                    </span>
+                                    WCA Live
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/results/rankings/333/single">
+                                    <span class="material-icons md-18">
+                                        signal_cellular_alt
+                                    </span>
+                                    排名
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/results/records">
+                                    <span class="material-icons md-18">
+                                        emoji_events
+                                    </span>
+                                    紀錄
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/persons?page=1&region=all&search=">
+                                    <span class="material-icons md-18">
+                                        groups
+                                    </span>
+                                    參賽者
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://statistics.worldcubeassociation.org/">
+                                    <span class="material-icons md-18">
+                                        query_stats
+                                    </span>
+                                    統計數據
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/media">
+                                <span class="material-icons md-18">
+                                    movie
+                                </span>
+                                    多媒體
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/export/results">
+                                <span class="material-icons md-18">
+                                    file_download
+                                </span>
+                                    Results Export
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/export/developer">
+                                    <span class="material-icons md-18">
+                                        desktop_windows
+                                    </span>
+                                    Developer Export
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="rule-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons md-18">class</span>
+                            規則
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/regulations/about/">
+                                <span class="material-icons md-18">
+                                    info
+                                </span>
+                                    關於規則
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/regulations/">
+                                    <span class="material-icons md-18">
+                                        book
+                                    </span>
+                                    規則
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/regulations/guidelines.html">
+                                    <span class="material-icons md-18">
+                                        description
+                                    </span>
+                                    指導方針
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/regulations/scrambles/">
+                                    <span class="material-icons md-18">
+                                        shuffle
+                                    </span>
+                                    轉亂程式
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/incidents">
+                                    <span class="material-icons md-18">
+                                        balance
+                                    </span>
+                                    意外事件日誌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/disciplinary">
+                                    <span class="material-icons md-18">
+                                        campaign
+                                    </span>
+                                    倫理事件日誌
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/regulations/history/">
+                                    <span class="material-icons md-18">
+                                        history
+                                    </span>
+                                    過去的版本
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.worldcubeassociation.org/regulations/translations/">
+                                    <span class="material-icons md-18">
+                                        translate
+                                    </span>
+                                    翻譯版
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="link-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons md-18">send</span>
+                            Find us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/thewcaofficial/">Instagram</a></li>
+                            <li><a class="dropdown-item" href="https://www.facebook.com/WorldCubeAssociation/">FaceBook</a></li>
+                            <li><a class="dropdown-item" href="https://twitter.com/theWCAofficial/">Twitter</a></li>
+                            <li><a class="dropdown-item" href="https://www.reddit.com/r/TheWCAOfficial/">Reddit</a></li>
+                            <li><a class="dropdown-item" href="https://www.twitch.tv/worldcubeassociation/">Twitch</a></li>
+                            <li><a class="dropdown-item" href="https://www.weibo.com/theWCA/">Weibo</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC5OUMUnS8PvY1RvtB1pQZ0g">Youtube</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://forum.worldcubeassociation.org/" role="button">
+                            <span class="material-icons md-18">forum</span>
+                            討論區
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group ">
+                        <div class="input-group ">
+                            <input type="text" class="form-control form-control" placeholder="搜尋網站"
+                                   aria-label="Recipient's username" aria-describedby="button-addon">
+                            <button class="btn btn-outline-secondary btn" type="button" id="button-addon">
+                                <span class="material-icons md-24">
+                                    search
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown" id="language-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            繁體中文
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-describedby="navbarDropdown" style=" max-height: 345px;
+  overflow-y: scroll">
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    English
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Čeština
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Dansk
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Deutsch
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Esperanto
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Español
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Suomi
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Français
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Hrvatski
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Magyar
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Bahasa Indonesia
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Italiano
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    日本語
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Қазақша
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    한국어
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Nederlands
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Polski
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Português Europeu
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Português Brasileiro
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Română
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Русский
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Slovenský
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Slovensko
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Svenska
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    ภาษาไทย
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Українська
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    Tiếng Việt
+                                </a></li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">
+                                    简体中文
+                                </a></li>
+                            <li class="dropdown-item nav-link">
+                                <a href="#" class="nav-link">
+                                    繁體中文
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="login-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            登入
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.worldcubeassociation.org/users/sign_in">登入</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.worldcubeassociation.org/users/sign_up">註冊</a></li>
+                            <li><a class="dropdown-item" href="https://www.worldcubeassociation.org/users/confirmation/new">沒有收到確認信件?</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="main-content">
+    <h1 id="main-message">503 Service Unavailable</h1>
+    <div id=bg-image>
+        <div class = "container-fluid text-center">
+            <br>
+            <h1>由於不明原因，無法正常顯示頁面，請點擊下方按鈕回到首頁</h1>
+            <div>
+                <video id='rubik_cube' loop autoplay muted width="500" height="500">
+                    <source src="images/rubik_s_cube.webm" type="video/webm"/>
+                </video>
+            </div>
+            <button id="return_button" type="button" class="btn btn-secondary btn-lg">返回首頁</button>
+        </div>
+    </div>
+
+</div>
+
+<footer id='footer_bar'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarCenteredExample"
+                    aria-controls="navbarCenteredExample"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="navbarCenteredExample"
+            >
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.worldcubeassociation.org/about">關於我們</a>
+                    </li>
+                    <li>
+                        <hr class="nav-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.worldcubeassociation.org/faq">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.worldcubeassociation.org/contact/website">聯絡</a>
+                    </li>
+                    <a class="nav-item">
+                        <img id="ghub" src="./images/icons/github-mark.png" alt="" class="d-inline-block align-text-top">
+                        <a class="nav-link" href="https://github.com/thewca/worldcubeassociation.org">Github</a>
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.worldcubeassociation.org/privacy">隱私權</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.worldcubeassociation.org/disclaimer">免責聲明</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+<script src="main.js"></script>
+<!-- Bootstrap javaScript -->
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+* {
+    font-size: 14px;
+}
+
+body {
+    font-size: 14px;
+    background-image: url("./images/homepage_banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: center;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+    /*text-align: center;*/
+    vertical-align: text-bottom;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+    /*text-align: center;*/
+    vertical-align: text-bottom;
+}
+
+.lang {
+    text-decoration: none;
+}
+
+#main-message {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#bg-image {
+    background: #FFFFFF;
+    padding-bottom: 5.7em;
+    align-content: center;
+}
+
+#rubik_cube {
+    display: inline;
+    margin: 0 auto;
+}
+
+#ghub {
+    display: inline-block;
+    /*position: static*/
+    margin-top: 50%;
+    width: 1em;
+    height: 1em;
+}
