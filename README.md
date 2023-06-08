@@ -11,7 +11,7 @@
 - 挑選作業之網站: [https://d1035899.github.io/HW1/](https://d1035899.github.io/HW1/)
 - Code Repo: [https://github.com/D1035899/final](https://github.com/D1035899/final)
 - 挑選作業之repo: [https://github.com/D1035899/HW1](https://github.com/D1035899/HW1)
-- 說明網站: [https://github.com/D1035899/final/blob/master/README.md](https://github.com/D1035899/HW3/blob/master/README.md)
+- 說明網站: [https://github.com/D1035899/final/blob/master/README.md](https://github.com/D1035899/final/blob/master/README.md)
 
 ---
 
